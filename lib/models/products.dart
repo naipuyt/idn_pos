@@ -1,7 +1,7 @@
 class Product {
   final String name;
   final int price;
-
+  
   Product({required this.name, required this.price});
   final List<Product> menus= [
    Product(name: "Nasi Goreng", price: 25000),
