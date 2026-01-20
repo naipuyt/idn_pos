@@ -35,6 +35,7 @@ class PrinterSelector extends StatelessWidget {
                 hint: Text("Pilih Printer BlueTooth", style: TextStyle(fontSize: 14)),
                 value: selectedDevice,
                 icon: Icon(Icons.keyboard_arrow_down_rounded),
+              
                 items: devices.map((e) => DropdownMenuItem(
                   value: e,
                   child: Text(e.name ?? "Unknown Device", style: TextStyle(fontSize: 14),),
