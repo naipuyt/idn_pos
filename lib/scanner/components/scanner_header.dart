@@ -37,6 +37,7 @@ class ScannerHeader extends StatelessWidget {
           ValueListenableBuilder(
             valueListenable: controller,
             builder: (context, value, child) {
+              // ignore: unrelated_type_equality_checks
               final isOn = state.TorchState == TorchState.on;
               return InkWell(
                 onTap: () => controller.toggleTorch(),

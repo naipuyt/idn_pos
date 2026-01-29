@@ -149,6 +149,7 @@ class _CashierScreenState extends State<CashierScreen> {
       _cart.forEach((product, qty) {
         String priceTotal = formatRupiah(product.price * qty);
         //cetak nama barang di kali qty
+        // ignore: unnecessary_brace_in_string_interps
         bluetooth.printLeftRight("${product.name} x${qty}", priceTotal, 1);
       });
       bluetooth.printCustom("--------------------------------", 1, 1);
