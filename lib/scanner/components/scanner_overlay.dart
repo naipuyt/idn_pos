@@ -37,7 +37,7 @@ class ScannerOverlay extends StatelessWidget {
         //garis anuan 
         Center(
           child: Container(
-            width: 380,
+            width: 280,
             height: 280,
             decoration: BoxDecoration(
               border: Border.all(color: Colors.cyanAccent, width: 2),
@@ -55,7 +55,7 @@ class ScannerOverlay extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      "arahkan ke QR struk",
+                      "Arahkan ke QR struk",
                       style: TextStyle(
                         color: Colors.white.withValues(alpha: 0.8),
                         fontSize: 12

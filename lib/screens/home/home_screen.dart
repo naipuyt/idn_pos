@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:idn_pos/scanner/scanner_screen.dart';
+import 'package:idn_pos/screens/cashier/cashier_screen.dart';
 import 'package:idn_pos/screens/home/components/home_header.dart';
 import 'package:idn_pos/screens/home/components/menu_card.dart';
 
@@ -21,7 +23,7 @@ class HomeScreen extends StatelessWidget {
                 subtitle: "Buat Pesanan & Cetak Struk",
                 icon: Icons.point_of_sale_rounded,
                 colors: [Color(0xFF4facfe), Color(0xFF00f2fe)],
-                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => Placeholder())),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => CashierScreen())),
               ),
               SizedBox(height: 20,),
 
@@ -30,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                 subtitle: "Scan QR & Lakukan Pembayaran",
                 icon: Icons.qr_code_scanner_rounded,
                 colors: [Color(0xFFfa709a), Color(0xFFfee140)],
-                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => Placeholder())),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ScannerScreen())),
              )
             ],
           ),
